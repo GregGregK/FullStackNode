@@ -1,6 +1,13 @@
 const app = require('./app');
+require('dotenv').config();
 
-app.listen(3333, (err) => {
+
+const PORT = process.env.PORT || 3333;
+
+
+
+
+app.listen(PORT, (err) => {
     if(!err) return console.log("deu bao")
 });
 
